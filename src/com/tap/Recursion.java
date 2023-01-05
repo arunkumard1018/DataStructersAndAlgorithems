@@ -2,7 +2,7 @@ package com.tap;
 
 import java.util.Scanner;
 
-public class Recurssion {
+public class Recursion {
 
     public static void balancedParanthsis(int n,int open,int close,StringBuilder res){
         if(close == n){
