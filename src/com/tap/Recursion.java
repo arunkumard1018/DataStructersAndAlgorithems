@@ -104,9 +104,10 @@ public class Recursion {
 //        String str = scan.nextLine();
 //        subSeq(str,new StringBuilder(),0);
 //        permutations(0,str.toCharArray());
-        int[] arr = {10,20,15,5};
-        int n = 25;
-        System.out.println("The Answer is : "+subseqsum(n,arr,0));
+//        int[] arr = {10,20,15,5};
+//        int n = 25;
+//        System.out.println("The Answer is : "+subseqsum(n,arr,0));
+
     }
 
 }
