@@ -1,4 +1,4 @@
-package com.myutil;
+package com.util;
 
 public class Arrays {
     public static void swap(int a,int b,char[] str){

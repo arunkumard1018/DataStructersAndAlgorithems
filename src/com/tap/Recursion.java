@@ -1,8 +1,7 @@
 package com.tap;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import com.myutil.*;
+import com.util.*;
 
 public class Recursion {
 
