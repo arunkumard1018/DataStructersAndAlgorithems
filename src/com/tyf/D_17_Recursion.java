@@ -1,6 +1,6 @@
 package com.tyf;
 
-public class Recursion {
+public class D_17_Recursion {
 
     public static void SubSetSum(int index,int[] arr,int sum){
         if(index<0){
