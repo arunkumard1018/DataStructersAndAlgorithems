@@ -67,7 +67,7 @@ public class D_01_Arrays {
     }
 
     /**
-     * Problem : P_06 StockBuyAndSell
+     * Problem : P_05 StockBuyAndSell
      * @param nums You are given an array of prices where nums[i] is the price of a given stock on an ith day.
      * Input: prices = [7,1,5,3,6,4]
      * Output: 5
@@ -84,21 +84,86 @@ public class D_01_Arrays {
         System.out.println("Maximum Profit : "+profit);
     }
 
+    /**
+     * Problem : P_06 SetMatrixZeros
+     * i/p : [ [ 1 1 1]
+     *         [ 1 0 1]
+     *         [ 1 1 1] ]
+     *=======================================
+     *  O/p : [ [ 1 0 1]
+     *          [ 0 0 0]
+     *          [ 1 0 1] ]
+     * exp : if any row or col contains Zero Then set all elements present in row or col to Zero
+     */
+    public static void setMatrixZeros(int[][] nums){
+        SetMatrixZero.SetZeros(nums);
+    }
+
     public static void main(String[] args){
         Scanner scan  = new Scanner(System.in);
 //        System.out.print("Enter n Value : ");
 //        int n = scan.nextInt();
 //        System.out.println();
 
-//        // P_01 Pascale Triangle
+//        P_01 Pascale Triangle
 //        for(List<Integer> data : pascaleTriangle(n)){
 //            System.out.println(data.toString());
 //        }
 
-//        P_04 Kaden's Algorithem
+//        P_03 Kaden's Algorithem
 //        int[] arr = {-2,1,-3,4,-1,2,1,-5,4};
 //        maxSubArraySum(arr);
+
+//        P_05 Stock Buy and Sell Problem
 //        stockBuyAndSell(new int[] {7,1,5,3,6,4});
 
+//        P_06 SetMatrixZeros
+//        int[][] nums = {{1,1,1},
+//                        {1,0,1},
+//                        {1,1,1}};
+//        com.utility.Arrays.display(nums);
+//        setMatrixZeros(nums);
+//        System.out.println("After Execution of SetMatrixZeros : ");
+//        com.utility.Arrays.display(nums);
+
+    }
+}
+
+class SetMatrixZero{
+    private static int rows;
+    private static int cols;
+    public static void SetZeros(int[][] nums){
+        rows = nums.length;
+        cols = nums[0].length;
+        boolean firstRowContainsZero = false;
+        boolean firstColContainsZero = false;
+
+        for(int j=0;j<cols; j++)
+            if(nums[0][j] == 0) firstRowContainsZero = true;
+        for(int i=0; i<rows; i++)
+            if(nums[i][0] == 0) firstColContainsZero = true;
+
+        for(int i=1; i<rows; i++){
+            for(int j=1; j<cols; j++){
+                if(nums[i][j] == 0){
+                    nums[0][j] = 0;
+                    nums[i][0] = 0;
+                }
+            }
+        }
+        for(int j=1; j<cols; j++)
+            if(nums[0][j] == 0) nullifyCol(nums,j);
+
+        for(int i=1; i<rows; i++)
+            if(nums[i][0] == 0) nullifyRow(nums,i);
+
+        if(firstColContainsZero) nullifyCol(nums,0);
+        if(firstRowContainsZero) nullifyRow(nums,0);
+    }
+    private static void nullifyRow(int[][] nums,int i){
+        for(int j=0; j<cols; j++) nums[i][j] = 0;
+    }
+    private static void nullifyCol(int[][] nums,int j){
+        for(int i=0; i<rows; i++) nums[i][j] = 0;
     }
 }

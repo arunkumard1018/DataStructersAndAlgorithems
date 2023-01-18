@@ -1,7 +1,7 @@
 package com.tap;
 
 import java.util.Scanner;
-import com.util.*;
+import com.utility.*;
 
 public class Recursion {
 
