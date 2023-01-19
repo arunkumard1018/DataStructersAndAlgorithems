@@ -10,7 +10,7 @@ public class Arrays{
     public static void display(int[][] nums){
         for(int[] arr : nums){
             for(int data : arr)
-                System.out.print(data+" ");
+                System.out.print(data+"\t");
             System.out.println();
         }
 
