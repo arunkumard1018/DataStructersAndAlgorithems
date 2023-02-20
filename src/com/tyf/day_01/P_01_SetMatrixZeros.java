@@ -1,8 +1,6 @@
 package com.tyf.day_01;
 
-import com.sun.org.apache.xpath.internal.objects.XBoolean;
-
-class Solution{
+class Solution_P_01 {
 
     /** Solution_01 Brut Force approach TC O(n^2) **/
     public static void answer_01(int[][] arr){
@@ -135,7 +133,7 @@ public class P_01_SetMatrixZeros {
 //        Solution.answer_02(arr);
 //        System.out.println("After The Execution Solution_02 :");
 
-        Solution.answer_03(arr);
+        Solution_P_01.answer_03(arr);
         System.out.println("After The Execution of Solution_03 :");
 
         com.utility.Arrays.display(arr);
