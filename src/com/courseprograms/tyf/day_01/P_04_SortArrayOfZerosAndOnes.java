@@ -1,4 +1,4 @@
-package com.tyf.day_01;
+package com.courseprograms.tyf.day_01;
 public class P_04_SortArrayOfZerosAndOnes {
     /* Brut Force approach by using Sorting TC: O(nlog(n)) SC:O(1) */
     public static void solution_01(int[] arr){
