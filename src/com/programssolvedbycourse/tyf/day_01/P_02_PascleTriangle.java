@@ -1,4 +1,4 @@
-package com.courseprograms.tyf.day_01;
+package com.programssolvedbycourse.tyf.day_01;
 
 
 import java.util.ArrayList;

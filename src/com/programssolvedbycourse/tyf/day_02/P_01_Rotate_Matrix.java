@@ -1,4 +1,4 @@
-package com.courseprograms.tyf.day_02;
+package com.programssolvedbycourse.tyf.day_02;
 
 
 class Solution_01{
