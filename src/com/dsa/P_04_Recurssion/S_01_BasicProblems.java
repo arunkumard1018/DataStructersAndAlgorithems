@@ -2,7 +2,11 @@ package com.dsa.P_04_Recurssion;
 
 public class S_01_BasicProblems {
 
-
+    /**
+     * Factorial of a given number n Using Recursive Approach
+     * Time Complexity: O(N)
+     * Auxiliary Space: O(1)
+     * */
     public static int factorialof(int num){
         if(num == 1) return num;
         return num * factorialof(num-1);
@@ -35,13 +39,38 @@ public class S_01_BasicProblems {
             fib[n] = fibSeries(fib, n-1) +  fibSeries(fib, n-2);
             return fib[n];
         }
+    }
 
+    /*
+    * Program to first n natural number
+    * TC O(N)
+    * */
+    public static void printNnaturalNumbers(int n){
+        if(n<0) return;
+        printNnaturalNumbers(n-1);
+        System.out.print(n+" ");
+    }
+    /*
+     * Program to count the digits of given number n
+     * TC O(N)
+     * */
+    public static int countDigOfNum(int n){
+        if(n<=0) return 0;
+        return countDigOfNum(n/10)+1;
+    }
+
+    /*
+     * Program to get sum of digits of given number n
+     * TC O(N)
+     * */
+    public static int sumOfAllDigits(int n){
+        if(n<10) return n;
+        return sumOfAllDigits(n/10) + n%10;
     }
 
 
+
     public static void main(String[] args) {
-        int[] arr = new int[9];
-        System.out.println("Answer is "+ fibSeries(arr,8));
-        com.utility.Display.display(arr);
+        System.out.println("the Answer is : "+sumOfAllDigits(21));
     }
 }
