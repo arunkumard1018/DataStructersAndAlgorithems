@@ -12,6 +12,7 @@ public class Test_03_Streams {
         Student s3 = new Student("Manoj",24,42);
         Student s4 = new Student("Chandan",22,32);
         Student s5 = new Student("Nagaraju",25,92);
+
         List<Student> students = Arrays.asList(s1, s2, s3, s4, s5);
         List<String> collect = students.stream()
                 .filter(student -> student.getScore() > 50)
