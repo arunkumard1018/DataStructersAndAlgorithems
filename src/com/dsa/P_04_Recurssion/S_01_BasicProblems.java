@@ -71,6 +71,6 @@ public class S_01_BasicProblems {
 
 
     public static void main(String[] args) {
-        System.out.println("the Answer is : "+sumOfAllDigits(21));
+        System.out.println("the Answer is : "+sumOfAllDigits(5251));
     }
 }
