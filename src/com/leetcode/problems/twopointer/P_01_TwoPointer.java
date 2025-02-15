@@ -1,4 +1,5 @@
 package com.leetcode.problems.twopointer;
+//Two Pointers problem 1
 class P_01_TwoPointer_Solution {
 
     public int strStr(String haystack, String needle) {
