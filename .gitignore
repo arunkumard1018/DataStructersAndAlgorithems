@@ -2,3 +2,4 @@ out/
 .idea/
 DataStructersAndAlgorithems.iml
 .env
+/environment.properties
