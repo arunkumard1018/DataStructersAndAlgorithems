@@ -2,5 +2,5 @@ out/
 .idea/
 DataStructersAndAlgorithems.iml
 .env
-/.env
+#SecreatKeys
 /environment.properties
